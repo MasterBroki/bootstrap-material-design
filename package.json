@@ -38,7 +38,7 @@
   "main": "dist/js/bootstrap-material-design.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FezVrasta/bootstrap-material-design.git"
+    "url": "https://github.com/MasterBroki/bootstrap-material-design.git"
   },
   "bugs": {
     "url": "https://github.com/FezVrasta/bootstrap-material-design/issues"
