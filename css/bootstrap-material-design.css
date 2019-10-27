@@ -12099,6 +12099,10 @@ h6 {
 :not(.bmd-drawer-out).bmd-drawer-overlay-xl-down.bmd-drawer-f-b > .bmd-layout-content {
   margin-bottom: 0; }
 
+.bmd-layout-drawer .dropdown-menu-drawer {
+  position: initial !important;
+  box-shadow: none; }
+
 .ripple {
   position: relative; }
 
