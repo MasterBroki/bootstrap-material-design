@@ -19,7 +19,7 @@
   "author": "Federico Zivolo",
   "scripts": {
     "docs:compile": "bundle exec jekyll build",
-    "docs:serve": "bundle exec jekyll serve",
+    "docs:serve": "bundle exec jekyll serve --incremental",
     "docs:assets": "node-sass --importer=node_modules/node-sass-tilde-importer assets/scss/docs.scss > assets/css/docs.css && cssnano assets/css/docs.css assets/css/docs.min.css",
     "docs:deploy": "npm run build && npm run docs:assets && npm run docs:compile && ./deploy.sh",
     "prepare": "npm run build",

@@ -36,6 +36,9 @@ const Drawer = ($ => {
    */
   class Drawer extends BaseLayout {
     // $element is expected to be the trigger
+//yeah, but it's not:
+      // element == drawer
+      // toggles == button
     //  i.e. <button class="btn bmd-btn-icon" for="search" data-toggle="drawer" data-target="#my-side-nav-drawer" aria-expanded="false" aria-controls="my-side-nav-drawer">
     constructor($element, config) {
       super($element, $.extend(true, {}, Default, config));
@@ -44,6 +47,7 @@ const Drawer = ($ => {
         `[data-toggle="drawer"][href="#${this.$element[0]
           .id}"], [data-toggle="drawer"][data-target="#${this.$element[0].id}"]`
       );
+
 
       this._addAria();
 
@@ -88,7 +92,8 @@ const Drawer = ($ => {
       if (this._isForcedClosed() || this._isOpen()) {
         return;
       }
-
+      $(".bmd-layout-drawer").hide();
+      this.$element.show();
       this.$toggles.attr("aria-expanded", true);
       this.$element.attr("aria-expanded", true);
       this.$element.attr("aria-hidden", false);
