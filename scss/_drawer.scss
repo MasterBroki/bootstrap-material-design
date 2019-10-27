@@ -118,3 +118,7 @@
 //  @include bmd-drawer-x-in($custom-size); // triggered with bmd-drawer-in
 //  @include bmd-drawer-x-overlay(); // overlay by default, no other classes necessary
 //}
+.bmd-layout-drawer .dropdown-menu-drawer {
+  position: initial !important;
+  box-shadow: none;
+}
