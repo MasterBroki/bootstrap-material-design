@@ -12103,6 +12103,10 @@ h6 {
   position: initial !important;
   box-shadow: none; }
 
+.bmd-layout-drawer .dropdown-menu-drawer .dropdown-item {
+  white-space: normal;
+  line-height: 25px; }
+
 .ripple {
   position: relative; }
 
